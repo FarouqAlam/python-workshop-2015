@@ -1,0 +1,3 @@
+all_content = readLines("hamilton.csv")
+skip_second = all_content[-(1:25)]
+dat = read.csv(textConnection(skip_second), header = TRUE, stringsAsFactors = FALSE)
